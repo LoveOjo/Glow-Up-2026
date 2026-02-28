@@ -255,15 +255,13 @@
       // Draw flyer background
       ctx.drawImage(flyerImg, 0, 0);
 
-      // ── Circle position (calibrated to the black circle on the flyer) ──
-      // Flyer is roughly 960×1245px at natural resolution.
-      // Circle centre ≈ x:480, y:430  radius ≈ 195
+      // ── Circle position (pixel-measured from flyer-template.jpg 1080×1350) ──
       const W = canvas.width;
       const H = canvas.height;
 
-      const cx = W * 0.500;   // horizontal centre
-      const cy = H * 0.345;   // vertical centre of circle
-      const r  = W * 0.202;   // circle radius
+      const cx = W * 0.4972;  // horizontal centre
+      const cy = H * 0.3667;  // vertical centre of circle
+      const r  = W * 0.2204;  // circle radius
 
       // Clip to circle
       ctx.save();
